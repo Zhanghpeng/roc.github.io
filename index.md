@@ -3,9 +3,9 @@ layout: default
 ---
 
 ## 设计模式
-* [设计模式-0](./knowledge/设计模式/设计模式.html).
-* [设计模式-1](./knowledge/设计模式//设计模式二.html).
-* [设计模式-2](./knowledge/设计模式//设计模式三.html).
+* [设计模式-0](./knowledge/design/design.html).
+* [设计模式-1](./knowledge/design/design2.html).
+* [设计模式-2](./knowledge/design/design3.html).
 
 ## 计算机网络
 * [计算机协议](./knowledge/计算机网络/1、各种协议.html).
