@@ -1,0 +1,150 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>星黎</title>
+  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
+  <updated>2024-08-02T14:54:16+08:00</updated>
+  <author>
+    <name>your_full_name</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="zh-CN"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
+  <rights> © 2024 your_full_name </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>设计模式之三</title>
+    <link href="http://localhost:4000/posts/design-03/" rel="alternate" type="text/html" title="设计模式之三" />
+    <published>2020-08-10T14:10:00+08:00</published>
+  
+    <updated>2020-08-10T14:10:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/design-03/</id>
+    <content src="http://localhost:4000/posts/design-03/" />
+    <author>
+      <name>cotes</name>
+    </author>
+
+  
+    
+    <category term="博客" />
+    
+    <category term="设计模式" />
+    
+  
+
+  <summary>设计模式
+上一篇为创建型模式，本篇包含以下几种结构型模式：适配器模式、装饰模式、代理模式、外观模式、桥接模式、组合模式、享元模式。
+
+
+
+1、适配器模式
+
+适配器模式（Adapter）将某个类的接口转换成客户端期望的另一个接口表示，目的是消除由于接口不匹配所造成的类的兼容性问题，主要分为三类：类的适配器模式、对象的适配器模式、接口的适配器模式。
+
+类的适配器模式
+
+核心思想就是：有一个Source类，拥有一个方法，待适配，目标接口时Targetable,通过Adapter类，将Source的功能拓展到Targetable里，看代码：
+
+public class Source{
+  public void method1(){
+    System.out.println(&amp;quot;this is original method);
+  }
+}
+public interface Targeta...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>设计模式之二</title>
+    <link href="http://localhost:4000/posts/design-02/" rel="alternate" type="text/html" title="设计模式之二" />
+    <published>2020-08-09T14:10:00+08:00</published>
+  
+    <updated>2020-08-09T14:10:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/design-02/</id>
+    <content src="http://localhost:4000/posts/design-02/" />
+    <author>
+      <name>cotes</name>
+    </author>
+
+  
+    
+    <category term="博客" />
+    
+    <category term="设计模式" />
+    
+  
+
+  <summary>设计模式
+
+将会设计到第三种设计模式-行为型模式，共十一种：策略模式、模板方法模式、观察者模式、迭代子模式、责任链模式、命令模式、备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。
+
+
+
+1、策略模式
+
+策略模式（strategy）定义了一系列算法，并将每个算法封装起来，使他们可以相互替换，且算法的变化不会影响到使用算法的客户，需要设计一个接口，为一系列实现类提供统一的方法，多个实现类实现该接口，设寄一个抽象类（可有可无，属于辅助类），提供辅助函数。
+
+示例代码：
+
+public interface ICalculator{//统一接口
+  public int calculate(String exp);
+}
+public abstract class AbstractCalculator{//辅助类
+  public int[] split(String exp,Stri...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>设计模式之一</title>
+    <link href="http://localhost:4000/posts/design-01/" rel="alternate" type="text/html" title="设计模式之一" />
+    <published>2020-08-08T14:10:00+08:00</published>
+  
+    <updated>2020-08-08T14:10:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/design-01/</id>
+    <content src="http://localhost:4000/posts/design-01/" />
+    <author>
+      <name>roc</name>
+    </author>
+
+  
+    
+    <category term="博客" />
+    
+    <category term="设计模式" />
+    
+  
+
+  <summary>设计模式
+
+​	设计模式是一套被反复使用，多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了可重用代码、让带吗更容易被他人理解、保证代码可靠性。毫无疑问，设计模式与己与他人系统都是多赢的，设计模式使代码编制真正工程化，设计模式是软件工程的基石，如同大厦的一块块砖石一样。项目中合理的运用设计模式可以完美的解决很多问题，每种模式在现在中都有相应的原理来与之对应，没有个模式描述了一个在我们周围不断重复发生的问题，以及该问题的核心解决方案，这也是它能被广泛应用的原因。
+
+设计模式分类
+
+总体来说设计模式分为三大类：
+
+
+  
+    创建型模式，共五种：工厂方式模式、抽象工厂模式、单例模式、建造者模式、原型模式。
+
+    对象实例化的模式，创建型模式用于解耦对象的实例化过程。
+  
+  
+    结构型模式，共七种：适配器模式、桥接模式、装饰器模式、代理模式、外观模式、组...</summary>
+
+  </entry>
+
+</feed>
+
+
