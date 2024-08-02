@@ -40,9 +40,9 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Install dependencies
-        run:
-            gem install bundler
-            bundle lock --add-platform x86_64-linux
+        run: |
+            gem install bundler \
+            bundle lock --add-platform x86_64-linux \
             bundle install
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -50,9 +50,9 @@ jobs:
           ruby-version: 3.3
           bundler-cache: true
       - name: Install dependencies
-        run:
-            gem install bundler
-            bundle lock --add-platform x86_64-linux
+        run: |
+            gem install bundler \
+            bundle lock --add-platform x86_64-linux \
             bundle install
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
