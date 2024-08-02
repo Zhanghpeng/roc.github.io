@@ -39,8 +39,13 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
 
+      - name: Install dependencies
+        run:
+            gem install bundler
+            bundle lock --add-platform x86_64-linux
+            bundle install
       - name: Setup Ruby
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.3
           bundler-cache: true
